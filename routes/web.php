@@ -56,3 +56,6 @@ Route::get('/user/profile', function () {
 })->name('profile');
 
 Route::resource('photos', PhotoController::class);
+
+// Praktikum 3
+Route::get('/greeting',  [WelcomeController::class,'greeting']);
